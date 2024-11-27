@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <link rel="stylesheet" href="src/css/reset.css"> 
+    <link rel="stylesheet" href="src/css/style.css"> 
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Almendra SC'>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+</head> 
+<body> 
+    <header class="header">
+    </header>
+    <div class="body">
+        <sidebar class="sidebar">
+            <button onclick="Status()">Status</button>
+            <button onclick="Personagem()">Personagem</button>
+            <button onclick="informacao()">Informação</button>
+        </sidebar>
+
+        <main class="main">
+            
+            <main class="main-Status" id="Status" style="display: flex;">
+
+                <div class="Status-Bar">
+                    <label for="Health">Health: /</label><br>
+                    <progress id="Health" value="100" max="100"></progress><br>
+                    <label for="Mana">Mana: /</label><br>
+                    <progress id="Mana" value="100" max="100"></progress>
+                </div>
+                
+                <div class="Settings">
+                <label for="Dano">Dano</label>
+                <div><input type="number" id="Dano"></input><button>X</button></div>
+
+                <label for="Uso">Uso</label>
+                <div><input type="number" id="Uso"></input><button>X</button></div>
+
+                <label for="MaxHp">MaxHp</label>
+                <div><input type="number" id="MaxHp"></input><button>X</button></div>
+
+                <label for="MaxMp">MaxMp</label>
+                <div><input type="number" id="MaxMp"></input><button>X</button></div>
+
+                </div>
+                
+            </main> 
+
+            <main class="main-Personagem" id="Personagem" style="display: none;">
+                personagem
+            </main> 
+
+            <main class="main-Informacao" id="Informacao" style="display: none;">
+                informacao
+            </main> 
+        
+        </main>
+    </div>
+
+    <footer class="footer">
+    </footer>
+
+    <div>
+        <script src="src/scripts/pages.js"></script>
+        <script src="src/scripts/Stats.js"></script>
+    </div>
+</body> 
+</html> 
