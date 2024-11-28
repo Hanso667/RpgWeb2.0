@@ -55,6 +55,7 @@
 }
 
 .sidebar button:hover {
+    cursor: pointer;
     color: #A04747;
     background-image: radial-gradient(#343131, #292626);
     border: 1vh solid #A04747;
@@ -144,7 +145,7 @@
     margin-bottom: 5vh;
 
 }
-.Settings input,button{
+.Settings input{
     text-align: center;
     font-size: larger;
     font-weight: bolder;
@@ -155,25 +156,6 @@
     box-shadow: 0 0 0 0.3vh #252323;
 }
 
-.Settings button:hover{
-    cursor: pointer;
-    background-color: #7c3737;
-    color: #252323;
-}
-@keyframes click{
-    0%{
-    }
-    50%{
-        background-color: #252323;
-        color: #7c3737;
-    }
-    0%{
-    }
-}
-.Settings button:active{
-    animation-name: click;
-    animation-duration: 300ms;
-}
 .Settings input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
