@@ -5,6 +5,7 @@ function setMaxHp() {
     var max = document.getElementById("Health").max;
     var current = document.getElementById("Health").value;
     document.getElementById("display-health").textContent = "Health "+current+"/"+max;
+    document.getElementById("MaxHp").value = ""
 }
 
 function setMaxMp() {
@@ -14,6 +15,7 @@ function setMaxMp() {
     var max = document.getElementById("Mana").max;
     var current = document.getElementById("Mana").value;
     document.getElementById("display-mana").textContent = "Mana "+current+"/"+max;
+    document.getElementById("MaxMp").value = ""
 }
 function damage() {
     var value = document.getElementById("Dano").value;
@@ -30,6 +32,7 @@ function damage() {
     }
     document.getElementById("Health").value = Math.floor(Health);
     document.getElementById("display-health").textContent = "Health "+Health+"/"+MaxHp;
+    document.getElementById("Dano").value = ""
 
 }
 function use() {
@@ -47,5 +50,6 @@ function use() {
     }
     document.getElementById("Mana").value = Math.floor(Mana);
     document.getElementById("display-mana").textContent = "Mana "+Mana+"/"+MaxMp;
+    document.getElementById("Uso").value = ""
 
 }
