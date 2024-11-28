@@ -4,7 +4,7 @@
     height: 15vh;
     width: 100%;
     border-bottom: 1vh solid #A04747;
-    box-shadow: 0px 0.75vh #343131;
+    box-shadow: 0px 0.75vh #292626;
     z-index: 1px;
 }
 
@@ -167,7 +167,7 @@ input::-webkit-inner-spin-button {
     height: 10.75vh;
     width: 100%;
     border-top: 1vh solid #A04747;
-    box-shadow: 0px -0.75vh 0px #343131;
+    box-shadow: 0px -0.75vh 0px #292626;
     z-index: 1px;
 }
 :focus {
