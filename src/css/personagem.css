@@ -1,0 +1,59 @@
+.main-Personagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 1vh;
+}
+
+.perso-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.perso-Foto {
+    background-image: url("src/image/ProfDefault.jpg");
+    width: 15vh;
+    height: 15vh;
+    border: 0.5vh solid #7c3737;
+    box-shadow: 0 0 0 0.3vh #252323;
+}
+
+.perso-Titulo {
+    width: 75vh;
+    height: 15vh;
+    background-color: #252323;
+    border: 0.5vh solid #7c3737;
+    box-shadow: 0 0 0 0.3vh #252323;
+}
+
+.perso-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.perso-Att{
+    width: 45vh;
+    height: 40vh;
+    background-color: #252323;
+    border: 0.5vh solid #7c3737;
+    box-shadow: 0 0 0 0.3vh #252323;
+}
+.perso-Traits{
+    width: 45vh;
+    height: 40vh;
+    background-color: #252323;
+    border: 0.5vh solid #7c3737;
+    box-shadow: 0 0 0 0.3vh #252323;
+}

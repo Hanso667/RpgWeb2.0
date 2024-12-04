@@ -1,14 +1,19 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <link rel="stylesheet" href="src/css/reset.css"> 
-    <link rel="stylesheet" href="src/css/style.css"> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/Status.css">
+    <link rel="stylesheet" href="src/css/Roleta.css">
+    <link rel="stylesheet" href="src/css/Informacao.css">
+    <link rel="stylesheet" href="src/css/personagem.css">
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Almendra SC'>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Document</title> 
-</head> 
-<body> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
     <header class="header">
     </header>
     <div class="body">
@@ -16,10 +21,11 @@
             <button onclick="Status()">Status</button>
             <button onclick="Personagem()">Personagem</button>
             <button onclick="informacao()">Informação</button>
+            <button onclick="Roleta()">Roleta</button>
         </sidebar>
 
         <main class="main">
-            
+
             <main class="main-Status" id="Status" style="display: flex;">
 
                 <div class="Status-Bar">
@@ -28,41 +34,77 @@
                     <label id="display-mana" for="Mana">Mana: 0/0</label><br>
                     <progress id="Mana" value="0" max="0"></progress>
                 </div>
-                
+
                 <div class="Settings">
-                <label for="Dano">Dano</label>
-                <input type="number" id="Dano" onkeypress="Javascript: if (event.keyCode==13) damage()"></input>
+                    <label for="Dano">Dano</label>
+                    <input type="number" id="Dano" onkeypress="Javascript: if (event.keyCode==13) damage()"></input>
 
-                <label for="Uso">Uso</label>
-                <input type="number" id="Uso" onkeypress="Javascript: if (event.keyCode==13) use()"></input>
+                    <label for="Uso">Uso</label>
+                    <input type="number" id="Uso" onkeypress="Javascript: if (event.keyCode==13) use()"></input>
 
-                <label for="MaxHp">MaxHp</label>
-                <input type="number" id="MaxHp" onkeypress="Javascript: if (event.keyCode==13) setMaxHp()"></input>
+                    <label for="MaxHp">MaxHp</label>
+                    <input type="number" id="MaxHp" onkeypress="Javascript: if (event.keyCode==13) setMaxHp()"></input>
 
-                <label for="MaxMp">MaxMp</label>
-                <input type="number" id="MaxMp" onkeypress="Javascript: if (event.keyCode==13) setMaxMp()"></input>
+                    <label for="MaxMp">MaxMp</label>
+                    <input type="number" id="MaxMp" onkeypress="Javascript: if (event.keyCode==13) setMaxMp()"></input>
 
                 </div>
-                
-            </main> 
+
+            </main>
 
             <main class="main-Personagem" id="Personagem" style="display: none;">
-                personagem
-            </main> 
+
+                <div class="perso-head">
+
+                    <div class="perso-Foto">
+                    </div>
+
+                    <div class="perso-Titulo">
+                    </div>
+
+                </div>
+
+                <div class="perso-body">
+
+                    <div class="perso-Att">
+                    </div>
+
+                    <div class="perso-Traits">
+                    </div>
+
+                </div>
+
+            </main>
 
             <main class="main-Informacao" id="Informacao" style="display: none;">
-                informacao
-            </main> 
-        
-        </main>
-    </div>
+                <div class="WIP">
+                    [W.I.P]
+                </div>
+            </main>
 
-    <footer class="footer">
-    </footer>
+            <main class="main-Roleta" id="Roleta" style="display: none;">
+                <div class="Roleta">
+                    <button class="trait" id="trait01" class=""></button><br>
+                    <button class="trait" id="trait02" class=""></button><br>
+                    <button class="trait" id="trait03" class=""></button><br>
+                    <button id="rolar" onclick="rolar()">Girar</button>
+                </div>
+</body>
 
-    <div>
-        <script src="src/scripts/pages.js"></script>
-        <script src="src/scripts/Stats.js"></script>
-    </div>
-</body> 
-</html> 
+</html>
+</main>
+
+</main>
+</div>
+
+<footer class="footer">
+</footer>
+
+<div>
+    <script src="src/scripts/pages.js"></script>
+    <script src="src/scripts/Stats.js"></script>
+    <script src="src/scripts/Traits.js"></script>
+</div>
+</body>
+
+</html>
