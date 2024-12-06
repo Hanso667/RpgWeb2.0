@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Almendra SC'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title id="PageTitle">Document</title>
 </head>
 
 <body>
@@ -56,10 +56,15 @@
 
                 <div class="perso-head">
 
-                    <div class="perso-Foto">
-                    </div>
+                    <img class="perso-Foto" src="src/Image/ProfDefault.jpg">
+                    </img>
 
                     <div class="perso-Titulo">
+                        <div class="ins">
+                            <label for="Nome">Nome: </label><input type="text" maxlength="20" id="Nome" onkeypress="Javascript: if (event.keyCode==13) setNomePage()"></input>
+                            <label for="Raça">Raça: </label><input type="text" maxlength="20" id="Raça"></input>
+                            <label for="Classe">Classe: </label><input type="text" maxlength="20" id="Classe"></input>
+                        </div>
                     </div>
 
                 </div>
@@ -70,6 +75,8 @@
                     </div>
 
                     <div class="perso-Traits">
+                        <text>Traits: </text>
+                        <textarea></textarea>
                     </div>
 
                 </div>
@@ -104,6 +111,7 @@
     <script src="src/scripts/pages.js"></script>
     <script src="src/scripts/Stats.js"></script>
     <script src="src/scripts/Traits.js"></script>
+    <script src="src/scripts/personagem.js"></script>
 </div>
 </body>
 
