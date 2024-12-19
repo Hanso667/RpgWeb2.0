@@ -19,19 +19,47 @@
 }
 
 .perso-Foto {
-    background-image: url("src/image/ProfDefault.jpg");
     width: 15vh;
     height: 15vh;
+    background-color: #252323;
     border: 0.5vh solid #7c3737;
     box-shadow: 0 0 0 0.3vh #252323;
 }
 
 .perso-Titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
     width: 75vh;
     height: 15vh;
     background-color: #252323;
     border: 0.5vh solid #7c3737;
     box-shadow: 0 0 0 0.3vh #252323;
+}
+.ins{
+    margin-top: 2vh;
+    margin-left: 2vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 55%;
+    gap: 1.5vh;
+}
+.ins input{
+    height: 2vh;
+    background-color: #252323;
+    color: white;
+    font-size: small;
+    border: none;
+
+}
+.ins label{
+    height: 2vh;
+    color: white;
+    font-size: medium;
 }
 
 .perso-body {
@@ -49,11 +77,29 @@
     background-color: #252323;
     border: 0.5vh solid #7c3737;
     box-shadow: 0 0 0 0.3vh #252323;
+    color: white;
 }
+
 .perso-Traits{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     width: 45vh;
     height: 40vh;
     background-color: #252323;
     border: 0.5vh solid #7c3737;
     box-shadow: 0 0 0 0.3vh #252323;
+}
+.perso-Traits text{
+    color: white;
+}
+.perso-Traits textarea{
+    width: 75%;
+    height: 75%;
+    resize: none;
+    background-color: #7c3737;
+    border: 0.5vh solid #252323;
+    box-shadow: 0 0 0 0.3vh #7c3737;
+    color: #252323;
 }
