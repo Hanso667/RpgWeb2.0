@@ -50,8 +50,8 @@
 }
 .ins input{
     height: 2vh;
-    background-color: #252323;
     color: white;
+    background-color: #252323;
     font-size: small;
     border: none;
 
@@ -96,6 +96,7 @@
     box-shadow: 0 0 0 0.3vh #7c3737;
 }
 .Attributes input{
+    background-color: transparent;
     text-align: center;
     width: 20px;
 }
@@ -110,9 +111,38 @@
     justify-content: center;
     align-items: center;
 }
-.att-general button{
-    border: none;
+.att-general{
+    color: #252323;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.div-points{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.div-points button{
+    border: 2px solid #7c3737;
+    box-shadow: 0 0 0 2px #252323;
     border-radius: 5px;
+    background-color: #252323;
+    color: #7c3737;
+}
+.div-points button:hover{
+    cursor: pointer;
+}
+.att-general button{
+    border: 2px solid #7c3737;
+    box-shadow: 0 0 0 2px #252323;
+    border-radius: 5px;
+    background-color: #252323;
+    color: #7c3737;
 }
 .att-general button:hover{
     cursor: pointer;

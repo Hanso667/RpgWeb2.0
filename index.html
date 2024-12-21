@@ -43,13 +43,6 @@
 
                     <label for="Uso">Uso</label>
                     <input type="number" id="Uso" onkeypress="Javascript: if (event.keyCode==13) use()"></input>
-
-                    <label for="MaxHp">MaxHp</label>
-                    <input type="number" id="MaxHp" onkeypress="Javascript: if (event.keyCode==13) setMaxHp()"></input>
-
-                    <label for="MaxMp">MaxMp</label>
-                    <input type="number" id="MaxMp" onkeypress="Javascript: if (event.keyCode==13) setMaxMp()"></input>
-
                 </div>
 
             </main>
@@ -89,7 +82,7 @@
 
                                     <div>
 
-                                        <label id="Vit">0</label>
+                                        <input type="number" readonly value="0" id="Vit">
 
                                     </div>
 
@@ -107,7 +100,7 @@
 
                                     <div>
 
-                                        <label id="Str">0</label>
+                                        <input type="number" readonly value="0" id="Str">
 
                                     </div>
 
@@ -125,7 +118,7 @@
 
                                     <div>
 
-                                        <label id="Spi">0</label>
+                                        <input type="number" readonly value="0" id="Spi">
 
                                     </div>
 
@@ -143,15 +136,16 @@
 
                                     <div>
 
-                                        <label id="Mag">0</label>
+                                        <input type="number" readonly value="0" id="Mag">
 
                                     </div>
 
                                 </div>
                             </div>
 
-                            <div>
-                            <input id="points" type="number" readonly value="0"><button onclick="upPoints()">+</button><button onclick="downPoints()">-</button>
+                            <div class="div-points">
+                            <input id="points" type="number" readonly value="0"><button onclick="upPoints()">+</button><button onclick="downPoints()">-</button><br>
+                            <button onclick="reset()">reset</button>
                             </div>
 
                         </div>
