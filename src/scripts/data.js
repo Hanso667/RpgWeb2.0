@@ -19,6 +19,10 @@ const save = () => {
     localStorage.setItem("raca", raca);
     localStorage.setItem("classe", classe);
     localStorage.setItem("traits", traits);
+    localStorage.setItem("vit", 0);
+    localStorage.setItem("str", 0);
+    localStorage.setItem("mag", 0);
+    localStorage.setItem("spi", 0);
     localStorage.setItem("vit", vit);
     localStorage.setItem("str", str);
     localStorage.setItem("mag", mag);
