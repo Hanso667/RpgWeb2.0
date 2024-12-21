@@ -2,21 +2,23 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/Status.css">
-    <link rel="stylesheet" href="src/css/Roleta.css">
-    <link rel="stylesheet" href="src/css/Informacao.css">
-    <link rel="stylesheet" href="src/css/personagem.css">
+    <link rel="stylesheet" href="src/css/Main/reset.css">
+    <link rel="stylesheet" href="src/css/Main/Status.css">
+    <link rel="stylesheet" href="src/css/Main/Roleta.css">
+    <link rel="stylesheet" href="src/css/Main/Informacao.css">
+    <link rel="stylesheet" href="src/css/Main/personagem.css">
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Almendra SC'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="PageTitle">Document</title>
+    <title id="PageTitle">Rpg</title>
 </head>
 
 <body>
     <header class="header">
     </header>
+    
     <div class="body">
+
         <sidebar class="sidebar">
             <button onclick="Status()">Status</button>
             <button onclick="Personagem()">Personagem</button>
@@ -72,11 +74,93 @@
                 <div class="perso-body">
 
                     <div class="perso-Att">
+
+                        <div class="Attributes">
+
+                            <div class="attStats">
+                                <div class="att-general">
+                                    <div>
+
+                                        <label>VIT</label>
+
+                                    </div>
+
+                                        <button onclick="upVit()">+</button>
+
+                                    <div>
+
+                                        <label id="Vit">0</label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="att-general">
+
+                                    <div>
+
+                                        <label>STR</label>
+
+                                    </div>
+
+                                        <button onclick="upStr()">+</button>
+
+                                    <div>
+
+                                        <label id="Str">0</label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="att-general">
+
+                                    <div>
+
+                                        <label>SPI</label>
+
+                                    </div>
+
+                                        <button onclick="upSpi()">+</button>
+
+                                    <div>
+
+                                        <label id="Spi">0</label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="att-general">
+
+                                    <div>
+
+                                        <label>MAG</label>
+
+                                    </div>
+
+                                        <button onclick="upMag()">+</button>
+
+                                    <div>
+
+                                        <label id="Mag">0</label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div>
+                            <input id="points" type="number" readonly value="0"><button onclick="upPoints()">+</button><button onclick="downPoints()">-</button>
+                            </div>
+
+                        </div>
+
                     </div>
 
                     <div class="perso-Traits">
                         <text>Traits: </text>
-                        <textarea></textarea>
+                        <textarea id="traits" class="traits"></textarea>
                     </div>
 
                 </div>
@@ -96,22 +180,19 @@
                     <button class="trait" id="trait03" class=""></button><br>
                     <button id="rolar" onclick="rolar()">Girar</button>
                 </div>
-</body>
+            </main>
+        </main>
+    </div>
 
-</html>
-</main>
-
-</main>
-</div>
-
-<footer class="footer">
-</footer>
+    <footer class="footer">
+    </footer>
 
 <div>
     <script src="src/scripts/pages.js"></script>
     <script src="src/scripts/Stats.js"></script>
     <script src="src/scripts/Traits.js"></script>
     <script src="src/scripts/personagem.js"></script>
+    <script src="src/scripts/data.js"></script>
 </div>
 </body>
 

@@ -1,0 +1,123 @@
+.main-Roleta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Roleta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.005vh;
+    width: 100%;
+    height: 90%;
+}
+
+.trait {
+    width: 100vh;
+    height: 15vh;
+    background-color: #252323;
+    border: 0.5vh solid #7c3737;
+    box-shadow: 0 0 0 0.3vh #252323;
+}
+
+@keyframes rolar {
+    0% {
+        color: #7c3737;
+        background-color: #252323;
+        border: 0.5vh solid #7c3737;
+        box-shadow: 0 0 0 0.3vh #252323;
+    }
+
+    100% {
+        color: #252323;
+        background-color: #7c3737;
+        border: 0.5vh solid #252323;
+        box-shadow: 0 0 0 0.3vh #7c3737;
+    }
+
+    0% {
+        color: #7c3737;
+        background-color: #252323;
+        border: 0.5vh solid #7c3737;
+        box-shadow: 0 0 0 0.3vh #252323;
+    }
+}
+
+#rolar {
+    background-color: #7c3737;
+    border: 0.5vh solid #252323;
+    box-shadow: 0 0 0 0.3vh #7c3737;
+    width: 75vh;
+    height: 10vh;
+}
+
+#rolar:hover {
+    cursor: pointer;
+    color: #7c3737;
+    background-color: #252323;
+    border: 0.5vh solid #7c3737;
+    box-shadow: 0 0 0 0.3vh #252323;
+}
+
+#rolar:active {
+    animation-name: rolar;
+    animation-duration: 0.1s;
+}
+
+.Roleta button {
+    font-weight: bolder;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    font-family: "Almendra SC", 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    border-radius: 2vh;
+}
+
+.comum {
+    width: 100vh;
+    height: 15vh;
+    background-color: #252323;
+    border: 0.5vh solid #7c3737;
+    box-shadow: 0 0 0 0.3vh #252323;
+    color: grey;
+}
+
+.incomum {
+    width: 100vh;
+    height: 15vh;
+    background-color: #252323;
+    border: 0.5vh solid #7c3737;
+    box-shadow: 0 0 0 0.3vh #252323;
+    color: green;
+}
+
+.raro {
+    width: 100vh;
+    height: 15vh;
+    background-color: #252323;
+    border: 0.5vh solid #7c3737;
+    box-shadow: 0 0 0 0.3vh #252323;
+    color: cyan;
+}
+
+.lendario {
+    width: 100vh;
+    height: 15vh;
+    background-color: #252323;
+    border: 0.5vh solid #7c3737;
+    box-shadow: 0 0 0 0.3vh #252323;
+    color: gold;
+}
+
+.unico {
+    width: 100vh;
+    height: 15vh;
+    background-color: #252323;
+    border: 0.5vh solid #7c3737;
+    box-shadow: 0 0 0 0.3vh #252323;
+    color: red;
+}
