@@ -11,6 +11,7 @@ const save = () => {
     const str = document.getElementById("Str").value
     const mag = document.getElementById("Mag").value
     const spi = document.getElementById("Spi").value
+    const ProImg = document.getElementById("persoFoto").src
     localStorage.setItem("maxhp", maxhp);
     localStorage.setItem("hp", hp);
     localStorage.setItem("maxmana", maxmana);
@@ -45,3 +46,30 @@ document.getElementById("Str").value = localStorage.getItem("str");
 document.getElementById("Mag").value = localStorage.getItem("mag");
 document.getElementById("Spi").value = localStorage.getItem("spi");
 setInterval(save,200);
+
+
+
+function changeFoto(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const imgElement = document.getElementById('persoFoto');
+            imgElement.src = e.target.result;
+
+            // Salvar a imagem no localStorage
+            localStorage.setItem('persoFoto', e.target.result);
+        };
+        reader.readAsDataURL(file);
+    }
+}
+function restoreFoto() {
+    const savedImage = localStorage.getItem('persoFoto');
+    if (savedImage) {
+        const imgElement = document.getElementById('persoFoto');
+        imgElement.src = savedImage;
+    }
+}
+
+// Restaurar a imagem ao carregar a página
+document.addEventListener('DOMContentLoaded', restoreFoto);

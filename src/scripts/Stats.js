@@ -1,22 +1,3 @@
-function setMaxHp() {
-    var value = document.getElementById("MaxHp").value;
-    document.getElementById("Health").max = Math.floor(value);
-    document.getElementById("Health").value = Math.floor(value);
-    var max = document.getElementById("Health").max;
-    var current = document.getElementById("Health").value;
-    document.getElementById("display-health").textContent = "Health " + current + "/" + max;
-    document.getElementById("MaxHp").value = ""
-}
-
-function setMaxMp() {
-    var value = document.getElementById("MaxMp").value;
-    document.getElementById("Mana").max = Math.floor(value);
-    document.getElementById("Mana").value = Math.floor(value);
-    var max = document.getElementById("Mana").max;
-    var current = document.getElementById("Mana").value;
-    document.getElementById("display-mana").textContent = "Mana " + current + "/" + max;
-    document.getElementById("MaxMp").value = ""
-}
 function damage() {
     var value = document.getElementById("Dano").value;
     var Health = document.getElementById("Health").value;

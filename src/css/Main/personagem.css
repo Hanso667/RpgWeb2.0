@@ -25,6 +25,9 @@
     border: 0.5vh solid #7c3737;
     box-shadow: 0 0 0 0.3vh #252323;
 }
+.perso-Foto{
+    cursor: pointer;
+}
 
 .perso-Titulo {
     display: flex;

@@ -16,7 +16,7 @@
 <body>
     <header class="header">
     </header>
-    
+
     <div class="body">
 
         <sidebar class="sidebar">
@@ -29,6 +29,7 @@
         <main class="main">
 
             <main class="main-Status" id="Status" style="display: flex;">
+
 
                 <div class="Status-Bar">
                     <label id="display-health" for="Health">Health: 0/0</label><br>
@@ -51,12 +52,17 @@
 
                 <div class="perso-head">
 
-                    <img class="perso-Foto" src="src/Image/ProfDefault.jpg">
-                    </img>
+                    <img class="perso-Foto" src="src/Image/ProfDefault.jpg" id="persoFoto"
+                        onclick="document.getElementById('fileInput').click();" />
+
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;"
+                        onchange="changeFoto(event)" />
+
 
                     <div class="perso-Titulo">
                         <div class="ins">
-                            <label for="Nome">Nome: </label><input type="text" maxlength="20" id="Nome" onkeypress="Javascript: if (event.keyCode==13) setNomePage()"></input>
+                            <label for="Nome">Nome: </label><input type="text" maxlength="20" id="Nome"
+                                onkeypress="Javascript: if (event.keyCode==13) setNomePage()"></input>
                             <label for="Raça">Raça: </label><input type="text" maxlength="20" id="Raça"></input>
                             <label for="Classe">Classe: </label><input type="text" maxlength="20" id="Classe"></input>
                         </div>
@@ -78,7 +84,7 @@
 
                                     </div>
 
-                                        <button onclick="upVit()">+</button>
+                                    <button onclick="upVit()">+</button>
 
                                     <div>
 
@@ -96,7 +102,7 @@
 
                                     </div>
 
-                                        <button onclick="upStr()">+</button>
+                                    <button onclick="upStr()">+</button>
 
                                     <div>
 
@@ -114,7 +120,7 @@
 
                                     </div>
 
-                                        <button onclick="upSpi()">+</button>
+                                    <button onclick="upSpi()">+</button>
 
                                     <div>
 
@@ -132,7 +138,7 @@
 
                                     </div>
 
-                                        <button onclick="upMag()">+</button>
+                                    <button onclick="upMag()">+</button>
 
                                     <div>
 
@@ -144,8 +150,9 @@
                             </div>
 
                             <div class="div-points">
-                            <input id="points" type="number" readonly value="0"><button onclick="upPoints()">+</button><button onclick="downPoints()">-</button><br>
-                            <button onclick="reset()">reset</button>
+                                <input id="points" type="number" readonly value="0"><button
+                                    onclick="upPoints()">+</button><button onclick="downPoints()">-</button><br>
+                                <button onclick="reset()">reset</button>
                             </div>
 
                         </div>
@@ -181,13 +188,13 @@
     <footer class="footer">
     </footer>
 
-<div>
-    <script src="src/scripts/pages.js"></script>
-    <script src="src/scripts/Stats.js"></script>
-    <script src="src/scripts/Traits.js"></script>
-    <script src="src/scripts/personagem.js"></script>
-    <script src="src/scripts/data.js"></script>
-</div>
+    <div>
+        <script src="src/scripts/pages.js"></script>
+        <script src="src/scripts/Stats.js"></script>
+        <script src="src/scripts/Traits.js"></script>
+        <script src="src/scripts/personagem.js"></script>
+        <script src="src/scripts/data.js"></script>
+    </div>
 </body>
 
 </html>
