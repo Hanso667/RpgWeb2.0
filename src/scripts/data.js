@@ -38,6 +38,7 @@ document.getElementById("Mana").max = localStorage.getItem("maxmana");
 document.getElementById("Mana").value = localStorage.getItem("mana");
 document.getElementById("display-mana").textContent = "Mana: "+localStorage.getItem("mana")+"/"+localStorage.getItem("maxmana")
 document.getElementById("Nome").value = localStorage.getItem("nome");
+document.getElementById("PageTitle").textContent = localStorage.getItem("nome");
 document.getElementById("Raça").value = localStorage.getItem("raca");
 document.getElementById("Classe").value = localStorage.getItem("classe");
 document.getElementById("traits").value = localStorage.getItem("traits");
