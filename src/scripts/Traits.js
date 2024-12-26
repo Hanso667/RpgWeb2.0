@@ -92,16 +92,16 @@ function rolar() {
     document.getElementById("trait03").className = "trait"
     document.getElementById("trait03").textContent = ""
     const timeout = setTimeout(resultado, 4000);
-    console.log("one"+one)
-    console.log("two"+two)
-    console.log("three"+three)
+    console.log("one" + one)
+    console.log("two" + two)
+    console.log("three" + three)
 }
 
 function first() {
     if (Comum.includes(one)) {
         document.getElementById("trait01").textContent = "comum"
         document.getElementById("trait01").className = "comum"
-    } 
+    }
     else if (incomum.includes(one)) {
         document.getElementById("trait01").textContent = "incomum"
         document.getElementById("trait01").className = "incomum"
@@ -118,13 +118,13 @@ function first() {
         document.getElementById("trait01").textContent = "unico"
         document.getElementById("trait01").className = "unico"
     }
-    
+
 }
 function second() {
     if (Comum.includes(two)) {
         document.getElementById("trait02").textContent = "comum"
         document.getElementById("trait02").className = "comum"
-    } 
+    }
     else if (incomum.includes(two)) {
         document.getElementById("trait02").textContent = "incomum"
         document.getElementById("trait02").className = "incomum"
@@ -146,7 +146,7 @@ function third() {
     if (Comum.includes(three)) {
         document.getElementById("trait03").textContent = "comum"
         document.getElementById("trait03").className = "comum"
-    } 
+    }
     else if (incomum.includes(three)) {
         document.getElementById("trait03").textContent = "incomum"
         document.getElementById("trait03").className = "incomum"

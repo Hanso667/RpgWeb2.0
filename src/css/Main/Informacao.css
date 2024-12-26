@@ -6,3 +6,260 @@
     height: 100%;
     width: 100%;
 }
+.info-container{
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    background-image:radial-gradient(#A04747,#7c3737) ;
+    border: 10px solid #252323;
+    border-radius: 20px;
+}
+.info-container::-webkit-scrollbar {
+    width: 10px;
+}
+.info-container::-webkit-scrollbar-track {
+  background:#7c3737; 
+}
+.info-container::-webkit-scrollbar-thumb {
+  background: #302d2d; 
+}
+
+
+.info-container2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 150px);
+    gap: 25px;
+    width: 95%;
+    height: 90%;
+}
+.info-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    color: #A04747;
+    border: 3px solid #A04747;
+    box-shadow: 0 0 0 3px #252323;
+    background-image: radial-gradient(#302d2d,#252323);
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+}
+.info-button img{
+    margin-right: 20px;
+}
+.info-button:hover{
+    cursor: pointer;
+}
+.info-MainButton{
+    color: #A04747;
+    border: 3px solid #A04747;
+    box-shadow: 0 0 0 3px #252323;
+    background-image: radial-gradient(#302d2d,#252323);
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+}
+.info-MainButton:hover{
+    cursor: pointer;
+}
+#return-button{
+    color: #252323;
+    width: 300px;
+    font-size: medium;
+    font-weight: bolder;
+    text-align: center;
+    background-image: radial-gradient(#A04747,#A04747);
+}
+#return-button:hover{
+    cursor: pointer;
+}
+#Npcs{
+    height: 360px;
+    width: 95%;
+}
+#Npcs-grid{
+    margin-top: 6px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(5, 40px);
+    gap: 25px;
+    width: 100%;
+    height: 100%;
+}
+#Locais-grid{
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(5, 40px);
+    gap: 25px;
+    width: 100%;
+    height: 360px;
+}
+#Materiais-grid{
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(5, 40px);
+    gap: 25px;
+    width: 100%;
+    height: 360px;
+}
+#Mobs-grid{
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(5, 40px);
+    gap: 25px;
+    width: 100%;
+    height: 360px;
+}
+.info-BackButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+    color: #A04747;
+    border: 3px solid #A04747;
+    box-shadow: 0 0 0 3px #252323;
+    background-image: radial-gradient(#302d2d,#252323);
+}
+#Deathclaw{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#Deathclaw img{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 3px solid #A04747;
+    box-shadow: 0 0 0 3px #252323;
+}
+#Deathclaw h1{
+    text-decoration: underline;
+    text-align: center;
+}
+#Deathclaw p{
+    text-align: center;
+}
+#Medusa{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#Medusa img{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 3px solid #A04747;
+    box-shadow: 0 0 0 3px #252323;
+}
+#Medusa h1{
+    text-decoration: underline;
+    text-align: center;
+}
+#Medusa p{
+    text-align: center;
+}
+#AsaMorta{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#AsaMorta img{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 3px solid #A04747;
+    box-shadow: 0 0 0 3px #252323;
+}
+#AsaMorta h1{
+    text-decoration: underline;
+    text-align: center;
+}
+#AsaMorta p{
+    text-align: center;
+}
+#MAequor{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#MAequor img{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 3px solid #A04747;
+    box-shadow: 0 0 0 3px #252323;
+}
+#MAequor h1{
+    text-decoration: underline;
+    text-align: center;
+}
+#MAequor p{
+    text-align: center;
+}
+#MTempestas{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#MTempestas img{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 3px solid #A04747;
+    box-shadow: 0 0 0 3px #252323;
+}
+#MTempestas h1{
+    text-decoration: underline;
+    text-align: center;
+}
+#MTempestas p{
+    text-align: center;
+}
+#MOssa{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#MOssa img{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 3px solid #A04747;
+    box-shadow: 0 0 0 3px #252323;
+}
+#MOssa h1{
+    text-decoration: underline;
+    text-align: center;
+}
+#MOssa p{
+    text-align: center;
+}

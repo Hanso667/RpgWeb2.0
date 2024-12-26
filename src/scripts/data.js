@@ -33,10 +33,10 @@ const save = () => {
 
 document.getElementById("Health").max = localStorage.getItem("maxhp");
 document.getElementById("Health").value = localStorage.getItem("hp");
-document.getElementById("display-health").textContent = "Health: "+localStorage.getItem("hp")+"/"+localStorage.getItem("maxhp")
+document.getElementById("display-health").textContent = "Health: " + localStorage.getItem("hp") + "/" + localStorage.getItem("maxhp")
 document.getElementById("Mana").max = localStorage.getItem("maxmana");
 document.getElementById("Mana").value = localStorage.getItem("mana");
-document.getElementById("display-mana").textContent = "Mana: "+localStorage.getItem("mana")+"/"+localStorage.getItem("maxmana")
+document.getElementById("display-mana").textContent = "Mana: " + localStorage.getItem("mana") + "/" + localStorage.getItem("maxmana")
 document.getElementById("Nome").value = localStorage.getItem("nome");
 document.getElementById("PageTitle").textContent = localStorage.getItem("nome");
 document.getElementById("Raça").value = localStorage.getItem("raca");
@@ -46,7 +46,7 @@ document.getElementById("Vit").value = localStorage.getItem("vit");
 document.getElementById("Str").value = localStorage.getItem("str");
 document.getElementById("Mag").value = localStorage.getItem("mag");
 document.getElementById("Spi").value = localStorage.getItem("spi");
-setInterval(save,200);
+setInterval(save, 200);
 
 
 

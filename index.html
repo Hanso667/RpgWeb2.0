@@ -169,8 +169,202 @@
             </main>
 
             <main class="main-Informacao" id="Informacao" style="display: none;">
-                <div class="WIP">
-                    [W.I.P]
+                <div class="info-container">
+
+                    <div class="info-container2" id="info-container2" style="display: flex;">
+                        <button class="info-MainButton" onclick="infopage('npcs')">NPCS</button>
+                        <button class="info-MainButton" onclick="infopage('locais')">LOCAIS</button>
+                        <button class="info-MainButton" onclick="infopage('materiais')">MATERIAIS</button>
+                        <button class="info-MainButton" onclick="infopage('mobs')">MOBS</button>
+                    </div>
+
+                    <div id="Npcs" style="display: none;">
+                        <div id="Npcs-grid">
+                            <button class="info-button" onclick="infopage('deathclaw')"><img width="30px" src="src/Image/ProfDefault.jpg">DeathClaw</button>
+                            <button class="info-button" onclick="infopage('asamorta')"><img width="30px" src="src/Image/ProfDefault.jpg">Asa-Morta</button>
+                            <button class="info-button" onclick="infopage('medusa')"><img width="30px" src="src/Image/ProfDefault.jpg">Medusa</button>
+                            <button class="info-button" onclick="infopage('maequor')"><img width="30px" src="src/Image/ProfDefault.jpg">Magna Aequor</button>
+                            <button class="info-button" onclick="infopage('mtempestas')"><img width="30px" src="src/Image/ProfDefault.jpg">Magna Tempestas</button>
+                            <button class="info-button" onclick="infopage('mossa')"><img width="30px" src="src/Image/ProfDefault.jpg">Magna Ossa</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button id="return-button" class="info-button" onclick="infopage('return')"><</button>
+                        </div>
+
+                        <div id="Deathclaw" style="display: none;">
+                            <img src="src/Image/DeathClaw.webp" width="300px">
+                            <h1>DeathClaw</h1>
+                            <p>Quando grande massas de humanos morrem, é dito que <br> os corpos em decomposição se juntam e deles nascem deathclaws.<br>
+
+                                obs.: o tamanho de um espécime, reflete a escala de conflitos recentes.<br><br>
+                                
+                                Forma de locomoção: Bípede e Quadrúpede Terrestre.<br>
+                                
+                                altura: 2,0m - 5,5m<br>
+                                
+                                peso: 250kg - 1500kg</p>
+                                <button class="info-BackButton" onclick="infopage('return2')"><</button>
+                        </div>
+
+                        <div id="AsaMorta" style="display: none;">
+                            <img src="src/Image/AsaMorta.webp" width="300px">
+                            <h1>Asa-Morta</h1>
+                            <p>são criaturas necrófagas, ou seja, se alimenta dos restos de cadáveres.<br><br>
+
+                                Forma de locomoção: Quadrupede voador.<br>
+                                
+                                altura: 1,5m - 2,3m.<br>
+                                
+                                envergadura: 2,5m - 3,5m.<br>
+                                
+                                peso: 20kg - 60kg</p>
+                                <button class="info-BackButton" onclick="infopage('return2')"><</button>
+                        </div>
+
+                        <div id="Medusa" style="display: none;">
+                            <img src="src/Image/Medusa.webp" width="300px">
+                            <h1>Medusa</h1>
+                            <p>Criatura marinha, frequentemente encontrada em cavernas subaquáticas.<br>
+
+                                Possui um potente veneno paralisante localizado em uma glândula próxima das narinas que se assemelha com as mesmas.<br>
+                                 elas liberam esse veneno através dos seus afiados dentes e podem cobrir suas garras com o mesmo.<br><br>
+                                
+                                Formatura de locomoção: natação por propulsão axial.<br>
+                                
+                                comprimento: 4m - 15m.<br>
+                                
+                                comprimento da cauda: 3m - 13m.<br>
+                                
+                                peso: 100kg - 300kg</p>
+                                <button class="info-BackButton" onclick="infopage('return2')"><</button>
+                        </div>
+                        <div id="MAequor" style="display: none;">
+                            <img src="src/Image/MAequor.webp" width="300px">
+                            <h1>Magna Aequor</h1>
+                            <p>Colosso adorado como guardião dos oceanos e senhor dos seres marinhos pelos humanos.<br><br>
+
+                                modo de locomoção:<br>
+                                
+                                submergido: propulsão a jato | em terra: locomoção cursorial.<br>
+                                
+                                altura: aproximadamente 200 metros.<br>
+                                
+                                peso: desconhecido.</p>
+                                <button class="info-BackButton" onclick="infopage('return2')"><</button>
+                        </div>
+                        <div id="MTempestas" style="display: none;">
+                            <img src="src/Image/MTempestas.webp" width="300px">
+                            <h1>Magna Tempestas</h1>
+                            <p>Colosso adorado como guardião dos céus e senhor das tempestades pelos humanos.<br><br>
+
+                                modo de locomoção: Voador.<br>
+                                
+                                altura: Depende da tempestade.<br>
+                                
+                                peso: desconhecido.</p>
+                                <button class="info-BackButton" onclick="infopage('return2')"><</button>
+                        </div>
+                        <div id="MOssa" style="display: none;">
+                            <img src="src/Image/MOssa.webp" width="300px">
+                            <h1>Magna Ossa</h1>
+                            <p>Colosso adorado como guardião das terras e senhor dos mortos pelos humanos.<br><br>
+
+                                modo de locomoção: Bípede Terrestre.<br>
+                                
+                                altura: entre 50 e 100 metros.<br>
+                                
+                                peso: desconhecido.</p>
+                                <button class="info-BackButton" onclick="infopage('return2')"><</button>
+                        </div>
+
+                    </div>
+
+                    <div id="Locais" style="display: none;">
+                        <div id="Locais-grid" >
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button id="return-button" class="info-button" onclick="infopage('return')"><</button>
+                        </div>
+                    </div>
+
+                    <div id="Materiais" style="display: none;">
+                        <div id="Materiais-grid" >
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button id="return-button" class="info-button" onclick="infopage('return')"><</button>
+                        </div>
+                    </div>
+
+                    <div id="Mobs" style="display: none;">
+                        <div id="Mobs-grid" >
+                            <button class="info-button" id=""><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button class="info-button"><img width="30px" src="src/Image/ProfDefault.jpg">x</button>
+                            <button id="return-button" class="info-button" onclick="infopage('return')"><</button>
+                        </div>
+                    </div>
+
                 </div>
             </main>
 
