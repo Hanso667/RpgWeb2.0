@@ -80,6 +80,7 @@ function infopage(pagina) {
         document.getElementById("MAequor").style.display = "none";
         document.getElementById("MTempestas").style.display = "none";
         document.getElementById("MOssa").style.display = "none";
+        document.getElementById("info-container").scrollTo(0,0);
     } else if (pagina == 'return-materiais') {
         document.getElementById("Materiais-grid").style.display = "grid";
         document.getElementById("Deathclaw").style.display = "none";
@@ -88,6 +89,7 @@ function infopage(pagina) {
         document.getElementById("MAequor").style.display = "none";
         document.getElementById("MTempestas").style.display = "none";
         document.getElementById("MOssa").style.display = "none";
+        document.getElementById("info-container").scrollTo(0,0);
     } else if (pagina == 'return-locais') {
         document.getElementById("Locais-grid").style.display = "grid";
         document.getElementById("Deathclaw").style.display = "none";
@@ -96,6 +98,7 @@ function infopage(pagina) {
         document.getElementById("MAequor").style.display = "none";
         document.getElementById("MTempestas").style.display = "none";
         document.getElementById("MOssa").style.display = "none";
+        document.getElementById("info-container").scrollTo(0,0);
     } else if (pagina == "deathclaw") {
         document.getElementById("Mobs-grid").style.display = "none";
         document.getElementById("Deathclaw").style.display = "flex";
