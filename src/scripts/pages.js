@@ -63,7 +63,16 @@ function infopage(pagina) {
         document.getElementById("Locais").style.display = "none";
         document.getElementById("Materiais").style.display = "none";
         document.getElementById("Mobs").style.display = "none";
-    } else if (pagina == "return2") {
+    } else if (pagina == "return-mobs") {
+        document.getElementById("Mobs-grid").style.display = "grid";
+        document.getElementById("Deathclaw").style.display = "none";
+        document.getElementById("AsaMorta").style.display = "none";
+        document.getElementById("Medusa").style.display = "none";
+        document.getElementById("MAequor").style.display = "none";
+        document.getElementById("MTempestas").style.display = "none";
+        document.getElementById("MOssa").style.display = "none";
+        document.getElementById("info-container").scrollTo(0,0);
+    } else if (pagina == 'return-npcs') {
         document.getElementById("Npcs-grid").style.display = "grid";
         document.getElementById("Deathclaw").style.display = "none";
         document.getElementById("AsaMorta").style.display = "none";
@@ -71,29 +80,40 @@ function infopage(pagina) {
         document.getElementById("MAequor").style.display = "none";
         document.getElementById("MTempestas").style.display = "none";
         document.getElementById("MOssa").style.display = "none";
+    } else if (pagina == 'return-materiais') {
+        document.getElementById("Materiais-grid").style.display = "grid";
+        document.getElementById("Deathclaw").style.display = "none";
+        document.getElementById("AsaMorta").style.display = "none";
+        document.getElementById("Medusa").style.display = "none";
+        document.getElementById("MAequor").style.display = "none";
+        document.getElementById("MTempestas").style.display = "none";
+        document.getElementById("MOssa").style.display = "none";
+    } else if (pagina == 'return-locais') {
+        document.getElementById("Locais-grid").style.display = "grid";
+        document.getElementById("Deathclaw").style.display = "none";
+        document.getElementById("AsaMorta").style.display = "none";
+        document.getElementById("Medusa").style.display = "none";
+        document.getElementById("MAequor").style.display = "none";
+        document.getElementById("MTempestas").style.display = "none";
+        document.getElementById("MOssa").style.display = "none";
     } else if (pagina == "deathclaw") {
-        document.getElementById("Npcs-grid").style.display = "none";
+        document.getElementById("Mobs-grid").style.display = "none";
         document.getElementById("Deathclaw").style.display = "flex";
-    } else if (pagina == "asamorta"){
-        document.getElementById("Npcs-grid").style.display = "none";
+    } else if (pagina == "asamorta") {
+        document.getElementById("Mobs-grid").style.display = "none";
         document.getElementById("AsaMorta").style.display = "flex";
-
-    } else if (pagina == "medusa"){
-        document.getElementById("Npcs-grid").style.display = "none";
+    } else if (pagina == "medusa") {
+        document.getElementById("Mobs-grid").style.display = "none";
         document.getElementById("Medusa").style.display = "flex";
-        
-    } else if (pagina == "maequor"){
-        document.getElementById("Npcs-grid").style.display = "none";
+    } else if (pagina == "maequor") {
+        document.getElementById("Mobs-grid").style.display = "none";
         document.getElementById("MAequor").style.display = "flex";
-        
-    } else if (pagina == "mtempestas"){
-        document.getElementById("Npcs-grid").style.display = "none";
+    } else if (pagina == "mtempestas") {
+        document.getElementById("Mobs-grid").style.display = "none";
         document.getElementById("MTempestas").style.display = "flex";
-        
-    } else if (pagina == "mossa"){
-        document.getElementById("Npcs-grid").style.display = "none";
+    } else if (pagina == "mossa") {
+        document.getElementById("Mobs-grid").style.display = "none";
         document.getElementById("MOssa").style.display = "flex";
-        
     }
 
 }
